@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-900 text-gray-100">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhruv Thakar | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <script src="script.js" defer></script>
+
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans">
+
+<!-- =========================== HEADER SECTION =========================== -->
+<header class="sticky top-0 z-50 bg-gray-800 bg-opacity-90 backdrop-blur-md shadow-md text-white">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <!-- Logo & Name -->
+    <h1 class="text-2xl font-bold uppercase tracking-wider flex items-center gap-2">
+      <img src="logo.png" alt="Logo" class="w-8 h-8 rounded-full hidden sm:inline-block" />
+      Dhruv Thakar
+    </h1>
+
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden text-white text-2xl focus:outline-none">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Navigation Links -->
+    <ul id="nav-links"
+        class="hidden md:flex flex-col md:flex-row gap-4 md:gap-6 text-sm md:text-base font-medium tracking-wide absolute md:static top-full left-0 w-full md:w-auto bg-gray-900 md:bg-transparent p-6 md:p-0 transition-all duration-300 z-50 items-center md:items-center">
+
+      <li><a href="#home" class="nav-link hover:text-red-400">Home</a></li>
+      <!-- About Me Dropdown Menu -->
+      <li class="relative group">
+        <button class="nav-link hover:text-red-400 flex items-center gap-1">
+          About Me <i class="fas fa-chevron-down text-sm mt-1"></i>
+        </button>
+        <ul class="absolute left-0 mt-2 w-52 bg-gray-800 text-white rounded-lg shadow-lg hidden group-hover:block z-50">
+          <li><a href="#about" class="block px-4 py-2 hover:bg-red-400 hover:text-gray-900">Who I Am</a></li>
+          <li><a href="#education" class="block px-4 py-2 hover:bg-red-400 hover:text-gray-900">Education</a></li>
+        </ul>
+      </li>
+
+
+      <!-- Work & Skills Dropdown Menu -->
+      <li class="relative group">
+        <button class="nav-link hover:text-red-400 flex items-center gap-1">
+          Work & Skills <i class="fas fa-chevron-down text-sm mt-1"></i>
+        </button>
+        <ul class="absolute left-0 mt-2 w-52 bg-gray-800 text-white rounded-lg shadow-lg hidden group-hover:block z-50">
+          <li><a href="#projects" class="block px-4 py-2 hover:bg-red-400 hover:text-gray-900">Projects</a></li>
+          <li><a href="#skills" class="block px-4 py-2 hover:bg-red-400 hover:text-gray-900">Skills</a></li>
+          <li><a href="#courses" class="block px-4 py-2 hover:bg-red-400 hover:text-gray-900">Courses</a></li>
+         </ul>
+      </li>
+
+      <!-- Experiences Dropdown -->
+      <li class="relative group">
+        <button class="nav-link hover:text-red-400 flex items-center gap-1">
+          Experiences <i class="fas fa-chevron-down text-sm mt-1"></i>
+        </button>
+        <ul class="absolute left-0 mt-2 w-48 bg-gray-800 text-white rounded-lg shadow-lg hidden group-hover:block z-50">
+          <li><a href="#volunteering" class="block px-4 py-2 hover:bg-red-400 hover:text-gray-900">Volunteering</a></li>
+          <li><a href="#clubs" class="block px-4 py-2 hover:bg-red-400 hover:text-gray-900">Clubs</a></li>
+        </ul>
+      </li>
+
+      <!-- Progress Dropdown Menu -->
+      <li class="relative group">
+        <button class="nav-link hover:text-red-400 flex items-center gap-1">
+          Progress <i class="fas fa-chevron-down text-sm mt-1"></i>
+        </button>
+        <ul class="absolute left-0 mt-2 w-48 bg-gray-800 text-white rounded-lg shadow-lg hidden group-hover:block z-50">
+          <li><a href="#timeline" class="block px-4 py-2 hover:bg-red-400 hover:text-gray-900">Timeline</a></li>
+          <li><a href="#learning-growth" class="block px-4 py-2 hover:bg-red-400 hover:text-gray-900">Learning & Growth</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#contact" class="nav-link hover:text-red-400">Contact Me</a></li>
+
+    </ul>
+  </div>
+</header>
+
+
+<!-- =========================== HOME SECTION =========================== -->
+<!-- Hero section with welcome message, typing effect, and social media links -->
+<section id="home" class="animate-gradient-x bg-gradient-to-r from-gray-900 via-gray-800 to-gray-700 text-white min-h-screen flex flex-col justify-center items-center px-6 text-center relative overflow-hidden">
+  <div class="max-w-3xl animate-fade-in">
+    <h1 class="text-5xl md:text-6xl font-extrabold mb-6">Welcome to My Portfolio</h1>
+    <p class="text-xl mb-8">
+      Hi, I'm <span class="text-red-400 font-semibold">Dhruv Thakar</span>, 
+      <span id="typing" class="text-red-300"></span>
+    </p>
+    <a href="#about" class="inline-block bg-red-400 hover:bg-red-500 text-gray-900 font-medium px-6 py-3 rounded shadow-lg transition transform hover:scale-105">
+      Learn More About Me <i class="fas fa-arrow-down ml-2"></i>
+    </a>
+    <div class="flex gap-6 mt-6 justify-center text-xl">
+      <a href="https://github.com/dhruvthakar" target="_blank" class="hover:text-red-400"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/dhruv-thakar-ba46aa296" target="_blank" class="hover:text-red-400"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:thakardhruvh@gmail.com" class="hover:text-red-400"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- =========================== ABOUT SECTION =========================== -->
+<!-- Provides a brief introduction, highlights skills and tools, resume link, and contact icons -->
+<section id="about" class="py-20 px-6 bg-gray-900 text-white">
+  <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    
+    <!-- Profile Image -->
+    <div class="flex justify-center">
+      <img src="profile.png" alt="Dhruv Thakar" class="w-64 h-64 rounded-2xl object-cover shadow-lg transform hover:scale-105 transition duration-300 border-4 border-red-400 bg-gray-900" />
+    </div>
+
+    <!-- About Content -->
+    <div>
+      <h2 class="text-4xl font-bold mb-4 text-red-400">About Me</h2>
+      <p class="text-gray-300 mb-4 leading-relaxed">
+        A Computer Science student at Ontario Tech University with a strong foundation in computing and problem-solving.
+      </p>
+      <p class="text-gray-400 mb-4">
+        I'm passionate about turning ideas into practical tech solutions — from writing clean, efficient code to building hardware-based projects with Arduino and circuitry.
+      </p>
+      <p class="text-gray-400">
+        Outside academics, I volunteer, compete in hackathons, and love sharing knowledge with others. Always learning, always building.
+      </p>
+
+      <!-- Quick Highlights -->
+      <div class="grid grid-cols-2 gap-4 mt-6">
+        <div class="bg-gray-800 p-4 rounded-lg shadow hover:shadow-md text-center">
+          <h3 class="text-xl font-semibold text-red-400">Languages</h3>
+          <p class="text-sm text-gray-300">Java, C++, Python, C</p>
+        </div>
+        <div class="bg-gray-800 p-4 rounded-lg shadow hover:shadow-md text-center">
+          <h3 class="text-xl font-semibold text-red-400">Tools</h3>
+          <p class="text-sm text-gray-300">VS Code, GitHub, Arduino</p>
+        </div>
+      </div>
+
+      <!-- Resume Button -->
+      <div class="mt-6">
+        <a href="resume.pdf" target="_blank" class="inline-block bg-red-400 text-gray-900 px-6 py-3 rounded hover:bg-red-500 transition">
+          <i class="fas fa-file-pdf mr-2"></i>Download My Resume
+        </a>
+      </div>
+
+      <!-- Connect With Me -->
+      <div class="mt-10">
+        <h3 class="text-2xl font-semibold text-red-400 mb-4">Connect With Me</h3>
+        <div class="flex gap-6 text-2xl text-white">
+          <a href="https://github.com/dhruvthakar" target="_blank" class="hover:text-gray-400 transition" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/dhruv-thakar-ba46aa296" target="_blank" class="hover:text-blue-400 transition" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:thakardhruvh@gmail.com" class="hover:text-yellow-400 transition" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME" target="_blank" class="hover:text-pink-400 transition" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- =========================== EDUCATION SECTION =========================== -->
+<section id="education" class="py-16 px-6 bg-gray-900">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-extrabold text-center mb-10 text-red-400 tracking-wide flex items-center justify-center gap-3">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422A12.083 12.083 0 0112 21.75a12.08 12.08 0 01-6.16-10.172L12 14z" />
+      </svg>
+      Education
+    </h2>
+    <div class="w-24 mx-auto h-1 bg-red-400 rounded mb-12"></div>
+
+    <div
+      class="bg-gray-800 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow flex flex-col sm:flex-row sm:items-center gap-6 sm:gap-8 cursor-default"
+      tabindex="0"
+      aria-label="Education at Ontario Tech University"
+    >
+      <!-- University Logo -->
+      <img
+        src="images/ontariotechu_logo.jpeg"
+        alt="Ontario Tech University Logo"
+        class="w-24 h-24 rounded-lg object-contain border border-gray-700 bg-white p-2 flex-shrink-0"
+        loading="lazy"
+      />
+
+      <!-- University Info -->
+      <div class="flex flex-col justify-center text-center sm:text-left">
+        <h3 class="text-2xl font-bold text-white mb-1 leading-tight">Ontario Tech University</h3>
+        <p class="text-gray-300 text-base mb-1 font-semibold">Bachelor of Science in Computer Science</p>
+        <p class="text-gray-400 text-sm mb-2 italic">Oshawa, Ontario, Canada</p>
+
+        <p class="text-gray-400 text-sm flex items-center justify-center sm:justify-start gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 text-red-400"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            aria-hidden="true"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Expected Graduation: <span class="text-white font-semibold ml-1">2028</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- =========================== VOLUNTEERING SECTION =========================== -->
+<section id="volunteering" class="py-16 px-6 bg-gray-900">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl font-extrabold text-center mb-12 text-red-400 tracking-wide flex items-center justify-center gap-3">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422A12.083 12.083 0 0112 21.75a12.08 12.08 0 01-6.16-10.172L12 14z" />
+      </svg>
+      Volunteering
+    </h2>
+
+    <div class="relative border-l-2 border-red-400 ml-6 pl-10 space-y-16">
+
+      <!-- CSCI Outreach Volunteer - Apr 2025 -->
+      <article class="relative">
+        <span class="absolute -left-6 top-3 bg-red-400 rounded-full w-6 h-6 ring-4 ring-gray-900"></span>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-6">
+          <img src="images/ontariotechu_logo.jpeg" alt="Ontario Tech University Logo" class="w-20 h-20 rounded-lg object-contain border border-gray-700 bg-white p-2 flex-shrink-0" loading="lazy" />
+          <div>
+            <h3 class="text-xl font-bold text-white mb-1">CSCI Outreach Volunteer</h3>
+            <p class="text-gray-400 italic mb-1">Ontario Tech University — Apr 2025 · 1 mo</p>
+            <p class="text-gray-300 mb-2 font-semibold">Education</p>
+            <p class="text-gray-300">
+              Supported prospective students during a university open house event designed to drive acceptances to the Computer Science program. Responsibilities included:
+            </p>
+            <ul class="list-disc list-inside text-gray-400 mt-2 space-y-1">
+              <li>Represented the Faculty of Science at the information booth, answering questions and offering insights into student life.</li>
+              <li>Assisted in organizing and executing interactive CSCI sessions, including problem-solving and hands-on paper airplane activities.</li>
+              <li>Facilitated audience engagement by coordinating microphone sharing during a live Q&A panel.</li>
+              <li>Participated in the student panel, offering authentic experiences and helpful advice to potential students.</li>
+              <li>Contributed to both setup and teardown efforts to ensure smooth event flow.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- CSCI Outreach Volunteer - Oct 2024 -->
+      <article class="relative">
+        <span class="absolute -left-6 top-3 bg-red-400 rounded-full w-6 h-6 ring-4 ring-gray-900"></span>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-6">
+          <img src="images/ontariotechu_logo.jpeg" alt="Ontario Tech University Logo" class="w-20 h-20 rounded-lg object-contain border border-gray-700 bg-white p-2 flex-shrink-0" loading="lazy" />
+          <div>
+            <h3 class="text-xl font-bold text-white mb-1">CSCI Outreach Volunteer</h3>
+            <p class="text-gray-400 italic mb-1">Ontario Tech University — Oct 2024 · 1 mo</p>
+            <p class="text-gray-300 mb-2 font-semibold">Education</p>
+            <p class="text-gray-300">
+              Volunteered as part of Ontario Tech’s Fall Open House event, supporting prospective students and their families in exploring academic programs, labs, and campus life. Responsibilities included:
+            </p>
+            <ul class="list-disc list-inside text-gray-400 mt-2 space-y-1">
+              <li>Assisted at program-specific booths, providing helpful insights about student life and academic experience.</li>
+              <li>Participated in organizing and guiding Lab Demo Tours, ensuring smooth transitions between locations and clear communication of schedules.</li>
+              <li>Coordinated with faculty and staff to direct students to accurate resources and contacts.</li>
+              <li>Helped manage student sign-ups for demos and ensured attendees were on time and prepared.</li>
+              <li>Contributed to event setup, on-the-day logistics, and clean-up efforts.</li>
+              <li>Shared personal experiences to support student recruitment and engagement.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- HackHive Participant -->
+      <article class="relative">
+        <span class="absolute -left-6 top-3 bg-red-400 rounded-full w-6 h-6 ring-4 ring-gray-900"></span>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-6">
+          <img src="images/ontariotechu_logo.jpeg" alt="Ontario Tech University Logo" class="w-20 h-20 rounded-lg object-contain border border-gray-700 bg-white p-2 flex-shrink-0" loading="lazy" />
+          <div>
+            <h3 class="text-xl font-bold text-white mb-1">HackHive Participant</h3>
+            <p class="text-gray-400 italic mb-1">Ontario Tech University — Feb 2025 · 1 mo</p>
+            <p class="text-gray-300 mb-2 font-semibold">Innovation & AI</p>
+            <p class="text-gray-300">
+              Participated in the HackHive Hackathon, developing innovative solutions to advance precision agriculture using AI and drone technology. Contributed to a team project focused on optimizing farm operations through smart analytics and real-time crop monitoring.
+            </p>
+            <p class="text-gray-300 mt-2">
+              Key features included AI-powered drones for field analysis, predictive maintenance tools, and automated management systems to support healthier crops and higher yields.
+            </p>
+            <p class="text-gray-300 mt-2">
+              Developed a prototype drone system that analyzes soil health, water levels, pest detection, and autonomously applies treatments based on AI-driven insights.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Panelist at Fletcher's Meadow Secondary School -->
+      <article class="relative">
+        <span class="absolute -left-6 top-3 bg-red-400 rounded-full w-6 h-6 ring-4 ring-gray-900"></span>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-6">
+          <img src="images/fletchers_meadow_logo.png" alt="Fletcher's Meadow Secondary School Logo" class="w-20 h-20 rounded-lg object-contain border border-gray-700 bg-white p-2 flex-shrink-0" loading="lazy" />
+          <div>
+            <h3 class="text-xl font-bold text-white mb-1">Panelist</h3>
+            <p class="text-gray-400 italic mb-1">Fletcher's Meadow Secondary School — May 2025 · 1 mo</p>
+            <p class="text-gray-300 mb-2 font-semibold">Education & Mentorship</p>
+            <p class="text-gray-300">
+              Invited as a panelist for the "Life After FMSS" event, speaking to Grade 11 and 12 students about transitioning from high school to post-secondary education and workforce.
+            </p>
+            <p class="text-gray-300 mt-2">
+              Shared insights on course planning, study habits, academic stress management, financial planning, scholarships, and balancing commitments.
+            </p>
+            <p class="text-gray-300 mt-2">
+              Strengthened public speaking, mentorship, and leadership skills while giving back to the community.
+            </p>
+          </div>
+        </div>
+      </article>
+      
+    </div>
+  </div>
+</section>
+
+
+<!-- =========================== CLUBS =========================== -->
+<section id="clubs" class="py-16 px-6 bg-gray-900">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl font-extrabold text-center mb-12 text-red-400 tracking-wide flex items-center justify-center gap-3">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422A12.083 12.083 0 0112 21.75a12.08 12.08 0 01-6.16-10.172L12 14z" />
+      </svg>
+      Clubs
+    </h2>
+
+    <div class="relative border-l-2 border-red-400 ml-6 pl-10 space-y-16">
+
+      <!-- OTU - Google Developer Group -->
+      <article class="relative">
+        <span class="absolute -left-6 top-3 bg-red-400 rounded-full w-6 h-6 ring-4 ring-gray-900"></span>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-6">
+          <img src="images/ontariotechu_logo.jpeg" alt="Ontario Tech University Logo" class="w-20 h-20 rounded-lg object-contain border border-gray-700 bg-white p-2 flex-shrink-0" loading="lazy" />
+          <div>
+            <h3 class="text-xl font-bold text-white mb-1">OTU - Google Developer Group</h3>
+            <p class="text-gray-400 italic mb-1">Jun 2025 - Present · 2 mos</p>
+            <p class="text-gray-300">
+              Active member participating in developer meetups, workshops, and collaborative projects promoting Google technologies.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Orientation Leader -->
+      <article class="relative">
+        <span class="absolute -left-6 top-3 bg-red-400 rounded-full w-6 h-6 ring-4 ring-gray-900"></span>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-6">
+          <img src="images/ontariotechu_logo.jpeg" alt="Ontario Tech University Logo" class="w-20 h-20 rounded-lg object-contain border border-gray-700 bg-white p-2 flex-shrink-0" loading="lazy" />
+          <div>
+            <h3 class="text-xl font-bold text-white mb-1">Orientation Leader</h3>
+            <p class="text-gray-400 italic mb-1">Apr 2025 - Present · 4 mos</p>
+            <p class="text-gray-300">
+              Leading and supporting new students during orientation activities to foster community and smooth transitions into university life.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Indian Student Association - External Affairs Executive -->
+      <article class="relative">
+        <span class="absolute -left-6 top-3 bg-red-400 rounded-full w-6 h-6 ring-4 ring-gray-900"></span>
+        <div class="flex flex-col sm:flex-row sm:items-center gap-6">
+          <img src="images/ontariotechu_logo.jpeg" alt="Ontario Tech University Logo" class="w-20 h-20 rounded-lg object-contain border border-gray-700 bg-white p-2 flex-shrink-0" loading="lazy" />
+          <div>
+            <h3 class="text-xl font-bold text-white mb-1">Indian Student Association - External Affairs Executive</h3>
+            <p class="text-gray-400 italic mb-1">Mar 2025 - Present · 5 mos</p>
+            <p class="text-gray-300">
+              Managing external communications and events to promote cultural awareness and engagement within the university community.
+            </p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- =========================== PROJECTS SECTION =========================== -->
+<!-- Showcases major coding and hardware projects with descriptions and GitHub links -->
+<section id="projects" class="py-16 px-6 bg-gray-900">
+<h2 class="text-3xl font-extrabold text-center mb-12 text-red-400 tracking-wide flex items-center justify-center gap-3">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7h18M3 12h18M3 17h18" />
+  </svg>
+  Projects
+</h2>
+  <div class="max-w-6xl mx-auto">
+    <div class="flex items-center bg-gray-900 p-4 mb-6">
+  <i class="fas fa-project-diagram text-red-400 mr-3"></i>
+  <h3 class="text-3xl font-semibold text-red-400">Projects</h3>
+</div>
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+      <!-- Project 1 -->
+      <div class="bg-gray-800 rounded-xl p-6 shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-2 text-white">Common Algorithms Library</h3>
+        <p class="text-gray-300 mb-2">Java library with classic algorithms for arrays: sorting, searching, shuffling, etc.</p>
+        <ul class="list-disc ml-5 text-sm text-gray-400 mb-4">
+          <li>Sorting: Selection, Insertion, Bubble</li>
+          <li>Searching: Sequential, Binary</li>
+          <li>Utilities: Shuffle, Reverse, Merge</li>
+        </ul>
+        <div class="mb-4 flex flex-wrap gap-2">
+          <span class="bg-red-700 text-red-200 px-2 py-1 rounded text-xs font-semibold">Java</span>
+          <span class="bg-yellow-700 text-yellow-200 px-2 py-1 rounded text-xs font-semibold">Algorithms</span>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="bg-gray-800 rounded-xl p-6 shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-2 text-white">IphonePhone – Java OOP</h3>
+        <p class="text-gray-300 mb-2">Simulates an iPhone using Java classes showcasing encapsulation and method overriding.</p>
+        <ul class="list-disc ml-5 text-sm text-gray-400 mb-4">
+          <li>App install/uninstall</li>
+          <li>Battery & flashlight control</li>
+          <li>Airplane mode simulation</li>
+        </ul>
+        <div class="mb-4 flex flex-wrap gap-2">
+          <span class="bg-red-700 text-red-200 px-2 py-1 rounded text-xs font-semibold">Java</span>
+          <span class="bg-blue-700 text-blue-200 px-2 py-1 rounded text-xs font-semibold">OOP</span>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="bg-gray-800 rounded-xl p-6 shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-2 text-white">Numeric Data GUI</h3>
+        <p class="text-gray-300 mb-2">Interactive GUI to perform math operations using Java Swing.</p>
+        <ul class="list-disc ml-5 text-sm text-gray-400 mb-4">
+          <li>Prime & square detection</li>
+          <li>Factorial, sum, reverse digits</li>
+          <li>Trigonometric functions</li>
+        </ul>
+        <div class="mb-4 flex flex-wrap gap-2">
+          <span class="bg-red-700 text-red-200 px-2 py-1 rounded text-xs font-semibold">Java</span>
+          <span class="bg-purple-700 text-purple-200 px-2 py-1 rounded text-xs font-semibold">Swing</span>
+          <span class="bg-yellow-700 text-yellow-200 px-2 py-1 rounded text-xs font-semibold">Math</span>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="bg-gray-800 rounded-xl p-6 shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-2 text-white">LED Flasher Circuit</h3>
+        <p class="text-gray-300 mb-2">Dual 555 timer-based strobe circuit simulating police lights.</p>
+        <ul class="list-disc ml-5 text-sm text-gray-400 mb-4">
+          <li>Alternating LED flashes</li>
+          <li>Adjustable speed</li>
+        </ul>
+        <div class="mb-4 flex flex-wrap gap-2">
+          <span class="bg-gray-700 text-gray-200 px-2 py-1 rounded text-xs font-semibold">Electronics</span>
+          <span class="bg-yellow-700 text-yellow-200 px-2 py-1 rounded text-xs font-semibold">555 Timer</span>
+          <span class="bg-red-700 text-red-200 px-2 py-1 rounded text-xs font-semibold">Circuit Design</span>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="bg-gray-800 rounded-xl p-6 shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-2 text-white">Sumo Bot</h3>
+        <p class="text-gray-300 mb-2">Autonomous robot built for sumo competitions using Arduino and C++.</p>
+        <ul class="list-disc ml-5 text-sm text-gray-400 mb-4">
+          <li>Sensor-based movement</li>
+          <li>Opponent detection and strategy</li>
+        </ul>
+        <div class="mb-4 flex flex-wrap gap-2">
+          <span class="bg-green-700 text-green-200 px-2 py-1 rounded text-xs font-semibold">Arduino</span>
+          <span class="bg-blue-700 text-blue-200 px-2 py-1 rounded text-xs font-semibold">C++</span>
+          <span class="bg-gray-700 text-gray-200 px-2 py-1 rounded text-xs font-semibold">Robotics</span>
+        </div>
+      </div>
+
+
+      <!-- Project 6 -->
+      <div class="bg-gray-800 rounded-xl p-6 shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-2 text-white">Personal Portfolio Website</h3>
+        <p class="text-gray-300 mb-2">Responsive personal portfolio built with HTML, Tailwind CSS, and JavaScript.</p>
+        <ul class="list-disc ml-5 text-sm text-gray-400 mb-4">
+          <li>Showcases projects, skills, timeline, and contact info</li>
+          <li>Uses Tailwind CSS for styling</li>
+          <li>Responsive and interactive design</li>
+        </ul>
+        <div class="mb-4 flex flex-wrap gap-2">
+          <span class="bg-orange-700 text-orange-200 px-2 py-1 rounded text-xs font-semibold">HTML</span>
+          <span class="bg-teal-700 text-teal-200 px-2 py-1 rounded text-xs font-semibold">Tailwind CSS</span>
+          <span class="bg-yellow-700 text-yellow-200 px-2 py-1 rounded text-xs font-semibold">JavaScript</span>
+        </div>
+      </div>
+
+      <!-- Project 7 -->
+      <div class="bg-gray-800 rounded-xl p-6 shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-2 text-white">Calculator</h3>
+        <p class="text-gray-300 mb-2">A feature-rich calculator built with Bootstrap and JavaScript supporting trigonometric functions, square roots, and input history.</p>
+        <ul class="list-disc ml-5 text-sm text-gray-400 mb-4">
+          <li>Clean Tailwind layout</li>
+          <li>Trigonometry & square root support</li>
+          <li>History tracking</li>
+          <li>Keyboard input support</li>
+        </ul>
+        <div class="mb-4 flex flex-wrap gap-2">
+          <span class="bg-blue-700 text-blue-200 px-2 py-1 rounded text-xs font-semibold">JavaScript</span>
+          <span class="bg-indigo-700 text-indigo-200 px-2 py-1 rounded text-xs font-semibold">Bootstrap</span>
+          <span class="bg-gray-700 text-gray-200 px-2 py-1 rounded text-xs font-semibold">Calculator</span>
+        </div>
+      </div>
+
+      <!-- Project 8 -->
+      <div class="bg-gray-800 rounded-xl p-6 shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold mb-2 text-white">Contact Manager App</h3>
+        <p class="text-gray-300 mb-2">A CRUD-based web app that allows users to manage contact details—create, edit, delete, and search contacts.</p>
+        <ul class="list-disc ml-5 text-sm text-gray-400 mb-4">
+          <li>Local storage or backend support</li>
+          <li>Responsive UI with form validation</li>
+          <li>Search and filter functionality</li>
+          <li>Clean and intuitive interface</li>
+        </ul>
+        <div class="mb-4 flex flex-wrap gap-2">
+          <span class="bg-green-700 text-green-200 px-2 py-1 rounded text-xs font-semibold">HTML</span>
+          <span class="bg-yellow-700 text-yellow-200 px-2 py-1 rounded text-xs font-semibold">JavaScript</span>
+          <span class="bg-blue-700 text-blue-200 px-2 py-1 rounded text-xs font-semibold">CRUD</span>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- =========================== SKILLS SECTION =========================== -->
+<!-- Categorized technical and soft skills with visual skill bars -->
+<section id="skills" class="py-16 px-6 bg-gray-900">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-3xl font-extrabold text-center mb-12 text-red-400 tracking-wide flex items-center justify-center gap-3">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 9h4.5m-6.75 4.5h9m-4.5-9A9 9 0 1021 12a9 9 0 00-9-9z" />
+  </svg>
+  Skills
+</h2>
+
+    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+
+      <!-- Web Development -->
+      <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-md">
+        <h3 class="flex items-center text-green-400 text-lg font-semibold mb-6">
+          <i class="fas fa-code mr-3"></i> Web Development
+        </h3>
+        <ul class="list-disc ml-6 space-y-1 text-gray-300 text-sm mb-6">
+          <li>HTML</li>
+          <li>CSS (Cascading Style Sheets)</li>
+          <li>Semantic Markup</li>
+          <li>External Styling</li>
+          <li>Responsive Design</li>
+          <li>Accessibility</li>
+        </ul>
+        <!-- Skill Bars -->
+        <div>
+          <span class="flex justify-between text-sm text-gray-300 mb-1">HTML & CSS</span>
+          <div class="w-full bg-gray-700 rounded h-3 mb-3">
+            <div class="bg-green-400 h-3 rounded animate-grow" style="width: 90%;"></div>
+          </div>
+          <span class="flex justify-between text-sm text-gray-300 mb-1">Responsive Design</span>
+          <div class="w-full bg-gray-700 rounded h-3">
+            <div class="bg-green-400 h-3 rounded animate-grow delay-200" style="width: 80%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Programming Languages -->
+      <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-md">
+        <h3 class="flex items-center text-blue-400 text-lg font-semibold mb-6">
+          <i class="fas fa-laptop-code mr-3"></i> Programming Languages
+        </h3>
+        <!-- Skill Bars -->
+        <div>
+          <span class="flex justify-between text-sm text-gray-300 mb-1">Java</span>
+          <div class="w-full bg-gray-700 rounded h-3 mb-3">
+            <div class="bg-blue-400 h-3 rounded animate-grow" style="width: 90%;"></div>
+          </div>
+          <span class="flex justify-between text-sm text-gray-300 mb-1">Python</span>
+          <div class="w-full bg-gray-700 rounded h-3 mb-3">
+            <div class="bg-blue-400 h-3 rounded animate-grow delay-200" style="width: 90%;"></div>
+          </div>
+          <span class="flex justify-between text-sm text-gray-300 mb-1">C++</span>
+          <div class="w-full bg-gray-700 rounded h-3 mb-3">
+            <div class="bg-blue-400 h-3 rounded animate-grow delay-400" style="width: 65%;"></div>
+          </div>
+          <span class="flex justify-between text-sm text-gray-300 mb-1">C</span>
+          <div class="w-full bg-gray-700 rounded h-3 mb-3">
+            <div class="bg-blue-400 h-3 rounded animate-grow delay-600" style="width: 65%;"></div>
+          </div>
+          <span class="flex justify-between text-sm text-gray-300 mb-1">Assembly Language</span>
+          <div class="w-full bg-gray-700 rounded h-3 mb-3">
+            <div class="bg-blue-400 h-3 rounded animate-grow delay-800" style="width: 50%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Electronics & Embedded Systems -->
+      <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-md">
+        <h3 class="flex items-center text-yellow-400 text-lg font-semibold mb-6">
+          <i class="fas fa-microchip mr-3"></i> Electronics & Embedded Systems
+        </h3>
+        <ul class="list-disc ml-6 space-y-1 text-gray-300 text-sm">
+          <li>Arduino</li>
+          <li>Embedded Systems</li>
+          <li>Circuit Design & Wiring</li>
+          <li>Digital Circuit Design</li>
+          <li>Printed Circuit Board (PCB) Manufacturing</li>
+          <li>Breadboarding Techniques</li>
+          <li>Electrical Wiring</li>
+          <li>LED Control & Current Limiting</li>
+          <li>Sensor Integration</li>
+          <li>Timing Control</li>
+          <li>Component Substitution</li>
+          <li>Electrical Troubleshooting</li>
+          <li>Schematic Interpretation</li>
+        </ul>
+      </div>
+
+      <!-- AI & Emerging Technologies -->
+      <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-md">
+        <h3 class="flex items-center text-purple-400 text-lg font-semibold mb-6">
+          <i class="fas fa-robot mr-3"></i> AI & Emerging Technologies
+        </h3>
+        <ul class="list-disc ml-6 space-y-1 text-gray-300 text-sm">
+          <li>Generative AI</li>
+        </ul>
+      </div>
+
+      <!-- Programming Concepts -->
+      <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-md">
+        <h3 class="flex items-center text-red-400 text-lg font-semibold mb-6">
+          <i class="fas fa-brain mr-3"></i> Programming Concepts
+        </h3>
+        <ul class="list-disc ml-6 space-y-1 text-gray-300 text-sm">
+          <li>Object-Oriented Programming (OOP)</li>
+          <li>Encapsulation</li>
+          <li>Java Classes and Objects</li>
+          <li>Getters and Setters</li>
+          <li>Method Overriding</li>
+          <li>Modular Programming & Module Design</li>
+          <li>Control Structures (if/else, loops)</li>
+          <li>Recursion</li>
+          <li>Algorithm Development & Decision-Making Logic</li>
+          <li>Searching Algorithms</li>
+          <li>Sorting Algorithms</li>
+          <li>Data Structures</li>
+          <li>Strings</li>
+          <li>Algorithmic Thinking</li>
+        </ul>
+      </div>
+
+      <!-- Software Development Practices -->
+      <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-md">
+        <h3 class="flex items-center text-teal-400 text-lg font-semibold mb-6">
+          <i class="fas fa-laptop-code mr-3"></i> Software Development Practices
+        </h3>
+        <ul class="list-disc ml-6 space-y-1 text-gray-300 text-sm">
+          <li>UI/UX Basics & User Interface Design</li>
+          <li>Java Swing & Event Driven Programming</li>
+          <li>Educational Software Development</li>
+          <li>Exception Handling</li>
+          <li>Code Documentation</li>
+          <li>Debugging & Troubleshooting</li>
+          <li>Research & Technical Troubleshooting</li>
+          <li>Problem Solving</li>
+          <li>Iterative Testing & Optimization</li>
+        </ul>
+      </div>
+
+      <!-- Collaboration & Soft Skills -->
+      <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-md">
+        <h3 class="flex items-center text-pink-400 text-lg font-semibold mb-6">
+          <i class="fas fa-users mr-3"></i> Collaboration & Soft Skills
+        </h3>
+        <ul class="list-disc ml-6 space-y-1 text-gray-300 text-sm">
+          <li>Team Collaboration</li>
+          <li>Project Management</li>
+          <li>Peer-Based Research</li>
+          <li>Townhall Facilitation</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  
+<!-- =========================== COURSES SECTION =========================== -->
+<!-- Highlights relevant university courses taken with descriptions and tags -->
+<section id="courses" class="py-16 px-6 bg-gray-900">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-extrabold text-center mb-12 text-red-400 tracking-wide flex items-center justify-center gap-3">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+      d="M12 20l-4-2m0-6l4 2 4-2m-4 6l4-2m0-6V4m-8 6V4m4 4h.01" />
+  </svg>
+  Courses
+</h2>
+
+
+    <!-- Grid layout for responsive course cards -->
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+      <!-- ================= Programming Courses ================= -->
+
+      <!-- Programming Workshop I -->
+      <div class="bg-gray-800 rounded-xl p-6 shadow hover:shadow-xl transition">
+        <!-- Course title and icon -->
+        <h3 class="text-xl font-semibold text-white mb-2 flex items-center">
+          <i class="fas fa-code text-green-400 mr-2"></i> Programming Workshop I
+        </h3>
+        <!-- Description -->
+        <p class="text-gray-300 text-sm mb-3">Introduced C++ fundamentals, control structures, and basic algorithms.</p>
+        <!-- Tag -->
+        <span class="bg-green-700 text-green-200 text-xs px-2 py-1 rounded-full font-semibold">Programming</span>
+      </div>
+
+      <!-- Programming Workshop II -->
+      <div class="bg-gray-800 rounded-xl p-6 shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold text-white mb-2 flex items-center">
+          <i class="fas fa-code text-green-400 mr-2"></i> Programming Workshop II
+        </h3>
+        <p class="text-gray-300 text-sm mb-3">Expanded C++ knowledge with modular design, recursion, and problem solving.</p>
+        <span class="bg-green-700 text-green-200 text-xs px-2 py-1 rounded-full font-semibold">Programming</span>
+      </div>
+
+      <!-- ================= Math Courses ================= -->
+
+      <!-- Calculus I -->
+      <div class="bg-gray-800 rounded-xl p-6 shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold text-white mb-2 flex items-center">
+          <i class="fas fa-calculator text-yellow-400 mr-2"></i> Calculus I
+        </h3>
+        <p class="text-gray-300 text-sm mb-3">Covered limits, derivatives, and applications of differential calculus.</p>
+        <span class="bg-yellow-700 text-yellow-200 text-xs px-2 py-1 rounded-full font-semibold">Math</span>
+      </div>
+
+      <!-- Calculus II -->
+      <div class="bg-gray-800 rounded-xl p-6 shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold text-white mb-2 flex items-center">
+          <i class="fas fa-calculator text-yellow-400 mr-2"></i> Calculus II
+        </h3>
+        <p class="text-gray-300 text-sm mb-3">Explored integration techniques, series, and multivariable calculus basics.</p>
+        <span class="bg-yellow-700 text-yellow-200 text-xs px-2 py-1 rounded-full font-semibold">Math</span>
+      </div>
+
+      <!-- Linear Algebra -->
+      <div class="bg-gray-800 rounded-xl p-6 shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold text-white mb-2 flex items-center">
+          <i class="fas fa-th text-green-300 mr-2"></i> Linear Algebra
+        </h3>
+        <p class="text-gray-300 text-sm mb-3">Matrix operations, vector spaces, eigenvalues, and linear transformations.</p>
+        <span class="bg-green-700 text-green-200 text-xs px-2 py-1 rounded-full font-semibold">Math</span>
+      </div>
+
+      <!-- Discrete Mathematics -->
+      <div class="bg-gray-800 rounded-xl p-6 shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold text-white mb-2 flex items-center">
+          <i class="fas fa-project-diagram text-purple-300 mr-2"></i> Discrete Mathematics
+        </h3>
+        <p class="text-gray-300 text-sm mb-3">Logic, set theory, combinatorics, graph theory, and proofs.</p>
+        <span class="bg-purple-700 text-purple-200 text-xs px-2 py-1 rounded-full font-semibold">Math</span>
+      </div>
+
+      <!-- Statistics & Probability -->
+      <div class="bg-gray-800 rounded-xl p-6 shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold text-white mb-2 flex items-center">
+          <i class="fas fa-chart-bar text-yellow-300 mr-2"></i> Stats & Probability for Scientists
+        </h3>
+        <p class="text-gray-300 text-sm mb-3">Probability theory, data distributions, and statistical inference for science students.</p>
+        <span class="bg-yellow-700 text-yellow-200 text-xs px-2 py-1 rounded-full font-semibold">Data Science</span>
+      </div>
+
+      <!-- ================= Science Courses ================= -->
+
+      <!-- Physics I -->
+      <div class="bg-gray-800 rounded-xl p-6 shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold text-white mb-2 flex items-center">
+          <i class="fas fa-atom text-purple-400 mr-2"></i> Physics I
+        </h3>
+        <p class="text-gray-300 text-sm mb-3">Studied motion, forces, energy, and momentum through Newtonian mechanics.</p>
+        <span class="bg-purple-700 text-purple-200 text-xs px-2 py-1 rounded-full font-semibold">Science</span>
+      </div>
+
+      <!-- Physics II -->
+      <div class="bg-gray-800 rounded-xl p-6 shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold text-white mb-2 flex items-center">
+          <i class="fas fa-atom text-purple-400 mr-2"></i> Physics II
+        </h3>
+        <p class="text-gray-300 text-sm mb-3">Covered electricity, magnetism, circuits, and electromagnetic waves.</p>
+        <span class="bg-purple-700 text-purple-200 text-xs px-2 py-1 rounded-full font-semibold">Science</span>
+      </div>
+
+      <!-- Environmental Science -->
+      <div class="bg-gray-800 rounded-xl p-6 shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold text-white mb-2 flex items-center">
+          <i class="fas fa-leaf text-green-400 mr-2"></i> Environmental Science
+        </h3>
+        <p class="text-gray-300 text-sm mb-3">Studied ecosystems, sustainability, and environmental challenges.</p>
+        <span class="bg-green-600 text-green-100 text-xs px-2 py-1 rounded-full font-semibold">Science</span>
+      </div>
+
+      <!-- ================= Other Courses ================= -->
+
+      <!-- Computer Architecture -->
+      <div class="bg-gray-800 rounded-xl p-6 shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold text-white mb-2 flex items-center">
+          <i class="fas fa-microchip text-teal-400 mr-2"></i> Computer Architecture
+        </h3>
+        <p class="text-gray-300 text-sm mb-3">Explored CPU design, memory systems, and low-level assembly programming.</p>
+        <span class="bg-blue-700 text-blue-200 text-xs px-2 py-1 rounded-full font-semibold">Core</span>
+      </div>
+
+      <!-- Technical Communication -->
+      <div class="bg-gray-800 rounded-xl p-6 shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold text-white mb-2 flex items-center">
+          <i class="fas fa-comments text-pink-400 mr-2"></i> Technical Communication
+        </h3>
+        <p class="text-gray-300 text-sm mb-3">Practiced professional writing and presentations tailored to technical fields.</p>
+        <span class="bg-pink-700 text-pink-200 text-xs px-2 py-1 rounded-full font-semibold">Soft Skills</span>
+      </div>
+
+      <!-- Management of an Enterprise -->
+      <div class="bg-gray-800 rounded-xl p-6 shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold text-white mb-2 flex items-center">
+          <i class="fas fa-network-wired text-indigo-400 mr-2"></i> Management of an Enterprise
+        </h3>
+        <p class="text-gray-300 text-sm mb-3">Learned business strategies, operations, and resource management basics.</p>
+        <span class="bg-indigo-700 text-indigo-200 text-xs px-2 py-1 rounded-full font-semibold">Business</span>
+      </div>
+
+      <!-- Intro to Computer Science -->
+      <div class="bg-gray-800 rounded-xl p-6 shadow hover:shadow-xl transition">
+        <h3 class="text-xl font-semibold text-white mb-2 flex items-center">
+          <i class="fas fa-laptop text-cyan-400 mr-2"></i> Intro to Computer Science
+        </h3>
+        <p class="text-gray-300 text-sm mb-3">Explored foundational CS concepts and built programs using Python.</p>
+        <span class="bg-cyan-700 text-cyan-200 text-xs px-2 py-1 rounded-full font-semibold">Core</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- =========================== TIMELINE SECTION =========================== -->
+<!-- Chronological listing of educational and project milestones -->
+<section id="timeline" class="py-16 px-6 bg-gray-900">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-extrabold text-center mb-12 text-red-400 tracking-wide flex items-center justify-center gap-3">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+  </svg>
+  My Journey
+</h2>
+
+
+    <div class="relative border-l-4 border-red-600 pl-6">
+
+      <!-- Item Template -->
+      <div class="mb-10 relative">
+        <span class="absolute -left-[0.9rem] top-1 w-4 h-4 bg-teal-400 rounded-full border-4 border-gray-900 shadow-md"></span>
+        <h3 class="text-lg font-bold text-red-400">Built Police LED Flasher
+          <span class="bg-blue-800 text-blue-200 text-xs ml-2 px-2 py-0.5 rounded-full">High School</span>
+        </h3>
+        <p class="text-gray-300 text-sm">Designed a dual 555 timer strobe circuit to simulate police lights. Learned basic electronics and prototyping.</p>
+        <a href="https://github.com/dhruvthakar/police-strobe-led-flasher" class="text-teal-400 text-sm hover:underline">GitHub</a>
+      </div>
+
+      <div class="mb-10 relative">
+        <span class="absolute -left-[0.9rem] top-1 w-4 h-4 bg-teal-400 rounded-full border-4 border-gray-900 shadow-md"></span>
+        <h3 class="text-lg font-bold text-red-400">Sumo Bot Competition
+          <span class="bg-blue-800 text-blue-200 text-xs ml-2 px-2 py-0.5 rounded-full">High School</span>
+        </h3>
+        <p class="text-gray-300 text-sm">Created an autonomous robot using Arduino and C++ for a sumo-style competition.</p>
+        <a href="https://github.com/dhruvthakar/sumo-bot" class="text-teal-400 text-sm hover:underline">GitHub</a>
+      </div>
+
+      <div class="mb-10 relative">
+        <span class="absolute -left-[0.9rem] top-1 w-4 h-4 bg-teal-400 rounded-full border-4 border-gray-900 shadow-md"></span>
+        <h3 class="text-lg font-bold text-red-400">Started BSc Computer Science @ Ontario Tech
+          <span class="bg-purple-800 text-purple-200 text-xs ml-2 px-2 py-0.5 rounded-full">2024</span>
+        </h3>
+        <p class="text-gray-300 text-sm">Began my undergraduate studies focused on programming fundamentals and software engineering.</p>
+      </div>
+
+      <div class="mb-10 relative">
+        <span class="absolute -left-[0.9rem] top-1 w-4 h-4 bg-teal-400 rounded-full border-4 border-gray-900 shadow-md"></span>
+        <h3 class="text-lg font-bold text-red-400">Programming Workshop I
+          <span class="bg-green-800 text-green-200 text-xs ml-2 px-2 py-0.5 rounded-full">Fall 2024</span>
+        </h3>
+        <p class="text-gray-300 text-sm">Learned C++ basics, control structures, arrays, loops, and recursion.</p>
+      </div>
+
+      <div class="mb-10 relative">
+        <span class="absolute -left-[0.9rem] top-1 w-4 h-4 bg-teal-400 rounded-full border-4 border-gray-900 shadow-md"></span>
+        <h3 class="text-lg font-bold text-red-400">Intro to Computer Science
+          <span class="bg-green-800 text-green-200 text-xs ml-2 px-2 py-0.5 rounded-full">Fall 2024</span>
+        </h3>
+        <p class="text-gray-300 text-sm">Explored foundational CS concepts and built programs using Python.</p>
+      </div>
+
+      <div class="mb-10 relative">
+        <span class="absolute -left-[0.9rem] top-1 w-4 h-4 bg-teal-400 rounded-full border-4 border-gray-900 shadow-md"></span>
+        <h3 class="text-lg font-bold text-red-400">CSCI Outreach Volunteer - Fall Open House
+          <span class="bg-yellow-800 text-yellow-200 text-xs ml-2 px-2 py-0.5 rounded-full">Oct 2024</span>
+        </h3>
+        <p class="text-gray-300 text-sm">Assisted prospective students, guided lab tours, and helped coordinate the open house event.</p>
+      </div>
+
+      <div class="mb-10 relative">
+        <span class="absolute -left-[0.9rem] top-1 w-4 h-4 bg-teal-400 rounded-full border-4 border-gray-900 shadow-md"></span>
+        <h3 class="text-lg font-bold text-red-400">Computer Architecture
+          <span class="bg-indigo-800 text-indigo-200 text-xs ml-2 px-2 py-0.5 rounded-full">Winter 2025</span>
+        </h3>
+        <p class="text-gray-300 text-sm">Studied instruction sets, CPU design, and low-level system implementation using assembly language.</p>
+      </div>
+
+      <div class="mb-10 relative">
+        <span class="absolute -left-[0.9rem] top-1 w-4 h-4 bg-teal-400 rounded-full border-4 border-gray-900 shadow-md"></span>
+        <h3 class="text-lg font-bold text-red-400">Programming Workshop II
+          <span class="bg-green-800 text-green-200 text-xs ml-2 px-2 py-0.5 rounded-full">Winter 2025</span>
+        </h3>
+        <p class="text-gray-300 text-sm">Expanded knowledge in C++ with modular design, functions, and intermediate-level projects.</p>
+      </div>
+
+      <div class="mb-10 relative">
+        <span class="absolute -left-[0.9rem] top-1 w-4 h-4 bg-teal-400 rounded-full border-4 border-gray-900 shadow-md"></span>
+        <h3 class="text-lg font-bold text-red-400">CSCI Outreach Volunteer - Spring Open House
+          <span class="bg-yellow-800 text-yellow-200 text-xs ml-2 px-2 py-0.5 rounded-full">Apr 2025</span>
+        </h3>
+        <p class="text-gray-300 text-sm">Presented CSCI demos, answered student questions, and supported event operations.</p>
+      </div>
+
+      <div class="mb-10 relative">
+        <span class="absolute -left-[0.9rem] top-1 w-4 h-4 bg-teal-400 rounded-full border-4 border-gray-900 shadow-md"></span>
+        <h3 class="text-lg font-bold text-red-400">HackHive Hackathon
+          <span class="bg-pink-800 text-pink-200 text-xs ml-2 px-2 py-0.5 rounded-full">Feb 2025</span>
+        </h3>
+        <p class="text-gray-300 text-sm">Collaborated with a team to prototype a tech solution under time constraints.</p>
+      </div>
+
+      <div class="mb-10 relative">
+        <span class="absolute -left-[0.9rem] top-1 w-4 h-4 bg-teal-400 rounded-full border-4 border-gray-900 shadow-md"></span>
+        <h3 class="text-lg font-bold text-red-400">Learning HTML & CSS
+          <span class="bg-indigo-800 text-indigo-200 text-xs ml-2 px-2 py-0.5 rounded-full">May 2025</span>
+        </h3>
+        <p class="text-gray-300 text-sm">Built static web pages and practiced responsive design using Tailwind CSS.</p>
+      </div>
+
+      <div class="mb-10 relative">
+        <span class="absolute -left-[0.9rem] top-1 w-4 h-4 bg-teal-400 rounded-full border-4 border-gray-900 shadow-md"></span>
+        <h3 class="text-lg font-bold text-red-400">Portfolio Website Launch
+          <span class="bg-indigo-800 text-indigo-200 text-xs ml-2 px-2 py-0.5 rounded-full">June 2025</span>
+        </h3>
+        <p class="text-gray-300 text-sm">Published my personal portfolio with projects, skills, and timeline using HTML, Tailwind, and JS.</p>
+        <a href="https://github.com/dhruvthakar/personal-portfolio" class="text-teal-400 text-sm hover:underline">GitHub</a>
+      </div>
+
+      <!-- Rounded End -->
+      <div class="absolute left-[-10px] bottom-0 w-5 h-5 bg-red-600 rounded-full border-4 border-gray-900"></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========================== LEARNING & GROWTH SECTION =========================== -->
+<section id="learning-growth" class="py-16 px-6 bg-gray-900">
+  <div class="max-w-4xl mx-auto">
+
+    <!-- Section Heading -->
+    <div class="flex items-center justify-center gap-3 mb-12">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422A12.083 12.083 0 0112 21.75a12.08 12.08 0 01-6.16-10.172L12 14z" />
+      </svg>
+      <h2 class="text-3xl font-extrabold tracking-wide text-red-400 text-center">
+        What I’m Doing / Learning Next
+      </h2>
+    </div>
+
+    <!-- Timeline -->
+    <div class="relative border-l-2 border-red-500 pl-8 space-y-12">
+
+      <!-- Item -->
+      <div class="relative">
+        <div class="absolute w-4 h-4 bg-red-400 rounded-full -left-2 top-1.5 ring-4 ring-gray-900"></div>
+        <p class="text-gray-300 text-lg hover:text-red-400 transition duration-300">
+          Learning React for building modern UIs
+        </p>
+      </div>
+
+      <!-- Item -->
+      <div class="relative">
+        <div class="absolute w-4 h-4 bg-red-400 rounded-full -left-2 top-1.5 ring-4 ring-gray-900"></div>
+        <p class="text-gray-300 text-lg hover:text-red-400 transition duration-300">
+          Learning Generative AI concepts and applications
+        </p>
+      </div>
+
+      <!-- Item -->
+      <div class="relative">
+        <div class="absolute w-4 h-4 bg-red-400 rounded-full -left-2 top-1.5 ring-4 ring-gray-900"></div>
+        <p class="text-gray-300 text-lg hover:text-red-400 transition duration-300">
+          Deepening knowledge about design platforms like Figma and Bootstrap
+        </p>
+      </div>
+
+      <!-- Item -->
+      <div class="relative">
+        <div class="absolute w-4 h-4 bg-red-400 rounded-full -left-2 top-1.5 ring-4 ring-gray-900"></div>
+        <p class="text-gray-300 text-lg hover:text-red-400 transition duration-300">
+          Currently building a Contact Manager App
+        </p>
+      </div>
+
+      <!-- Item -->
+      <div class="relative">
+        <div class="absolute w-4 h-4 bg-red-400 rounded-full -left-2 top-1.5 ring-4 ring-gray-900"></div>
+        <p class="text-gray-300 text-lg hover:text-red-400 transition duration-300">
+          Enhancing a feature-rich Calculator application
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- =========================== CONTACT SECTION =========================== -->
+<!-- Contact form with name, email, and message input fields + social icons -->
+<section id="contact" class="py-16 px-6 bg-gray-900 fade-in-up">
+  <div class="max-w-3xl mx-auto text-center">
+
+    <!-- Section Header (Fixed Alignment) -->
+    <div class="flex items-center justify-center gap-3 mb-12">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 10a9 9 0 11-18 0 9 9 0 0118 0zm-9 5v.01M12 10h.01" />
+      </svg>
+      <h2 class="text-3xl font-extrabold tracking-wide text-red-400 text-center">
+        Contact
+      </h2>
+    </div>
+
+    <!-- Contact Form -->
+    <form id="contact-form" action="mailto:thakardhruvh@gmail.com" method="POST" class="max-w-lg mx-auto space-y-6">
+      <!-- Name -->
+      <div class="relative z-0 w-full group">
+        <input type="text" name="name" id="name" required
+          class="block py-2.5 px-0 w-full text-white bg-transparent border-0 border-b-2 border-gray-500 appearance-none focus:outline-none focus:ring-0 focus:border-teal-400 peer"
+          placeholder=" " />
+        <label for="name"
+          class="absolute text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-teal-400">
+          Name
+        </label>
+      </div>
+
+      <!-- Email -->
+      <div class="relative z-0 w-full group">
+        <input type="email" name="email" id="email" required
+          class="block py-2.5 px-0 w-full text-white bg-transparent border-0 border-b-2 border-gray-500 appearance-none focus:outline-none focus:ring-0 focus:border-teal-400 peer"
+          placeholder=" " />
+        <label for="email"
+          class="absolute text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-teal-400">
+          Email
+        </label>
+      </div>
+
+      <!-- Message -->
+      <div class="relative z-0 w-full group">
+        <textarea name="message" id="message" rows="5" required
+          class="block py-2.5 px-0 w-full text-white bg-transparent border-0 border-b-2 border-gray-500 appearance-none focus:outline-none focus:ring-0 focus:border-teal-400 peer resize-none"
+          placeholder=" "></textarea>
+        <label for="message"
+          class="absolute text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:-translate-y-6 peer-focus:scale-75 peer-focus:text-teal-400">
+          Message
+        </label>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit"
+        class="w-full py-3 bg-red-400 hover:bg-red-500 rounded-md font-semibold text-gray-900 transition-transform transform hover:scale-105 shadow-lg">
+        Send Message
+      </button>
+    </form>
+
+    <!-- Social/contact icons -->
+    <div class="mt-10 flex justify-center gap-8 text-3xl text-teal-400">
+      <a href="mailto:thakardhruvh@gmail.com" aria-label="Email" class="hover:text-teal-300 transition">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://linkedin.com/in/thakar-dhruv" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
+        class="hover:text-teal-300 transition">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/thakardhruv" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+        class="hover:text-teal-300 transition">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.instagram.com/thakar.dhruv" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+        class="hover:text-teal-300 transition">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="tel:+1234567890" aria-label="Phone" class="hover:text-teal-300 transition">
+        <i class="fas fa-phone"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- =========================== FOOTER SECTION =========================== -->
+<!-- Includes about info, quick nav links, contact info, and copyright -->
+<footer class="bg-gray-900 text-gray-300 py-10 px-6">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+
+    <!-- About -->
+    <div>
+      <h3 class="text-red-400 text-xl font-semibold mb-4">About Me</h3>
+      <p class="text-gray-400 leading-relaxed">
+        Passionate software developer specializing in web technologies. Always eager to learn and build impactful projects.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 class="text-red-400 text-xl font-semibold mb-4">Quick Links</h3>
+      <ul>
+        <li><a href="#hero" class="hover:text-teal-300 transition">Home</a></li>
+        <li><a href="#skills" class="hover:text-teal-300 transition">Skills</a></li>
+        <li><a href="#projects" class="hover:text-teal-300 transition">Projects</a></li>
+        <li><a href="#contact" class="hover:text-teal-300 transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact & Social -->
+    <div>
+      <h3 class="text-red-400 text-xl font-semibold mb-4">Contact & Social</h3>
+      <p class="mb-2"><i class="fas fa-envelope mr-2 text-teal-400"></i> thakardhruvh@gmail.com</p>
+      <p class="mb-4"><i class="fas fa-phone mr-2 text-teal-400"></i> +1 (647) 919 2941</p>
+      <div class="flex space-x-6 text-teal-400 text-2xl">
+        <a href="https://linkedin.com/in/dhruvthakar" target="_blank" class="hover:text-teal-300 transition" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/dhruvthakar" target="_blank" class="hover:text-teal-300 transition" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://twitter.com/dhruvthakar" target="_blank" class="hover:text-teal-300 transition" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://instagram.com/dhruvthakar" target="_blank" class="hover:text-teal-300 transition" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-10 text-center text-gray-500 text-sm">
+    &copy; 2025 Dhruv Thakar. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
